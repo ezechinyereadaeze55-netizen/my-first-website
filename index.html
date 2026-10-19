@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0c1220;
+      color: white;
+      line-height: 1.7;
+    }
+
+    nav {
+      padding: 22px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #263348;
+    }
+
+    nav h2 {
+      color: #a8f0d0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    header {
+      padding: 100px 8%;
+      background: linear-gradient(135deg, #15263b, #0c1220);
+    }
+
+    .tag {
+      color: #a8f0d0;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    header h1 {
+      font-size: clamp(45px, 8vw, 80px);
+      line-height: 1.1;
+      margin: 25px 0;
+    }
+
+    header h1 span {
+      color: #a8f0d0;
+    }
+
+    header p, section p {
+      color: #b7c2d3;
+      max-width: 600px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 22px;
+      background: #a8f0d0;
+      color: #0c1220;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 65px 8%;
+    }
+
+    .label {
+      color: #a8f0d0;
+      letter-spacing: 2px;
+      font-size: 13px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .card {
+      padding: 25px;
+      background: #152033;
+      border: 1px solid #29374c;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      color: #a8f0d0;
+    }
+
+    .contact {
+      background: #a8f0d0;
+      color: #0c1220;
+      margin: 20px 5%;
+      border-radius: 15px;
+    }
+
+    .contact p {
+      color: #23493d;
+    }
+
+    .contact .label {
+      color: #23493d;
+    }
+
+    .contact .button {
+      background: #0c1220;
+      color: white;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      color: #b7c2d3;
+      border-top: 1px solid #263348;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>✦ My Space</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <header>
+    <p class="tag">WELCOME TO MY WORLD</p>
+    <h1>Ideas start<br><span>somewhere.</span></h1>
+    <p>This is my corner of the internet. I'm learning, exploring, and turning my ideas into something real. This is only the beginning!</p>
+    <a class="button" href="#about">Explore my website ↘</a>
+  </header>
+
+  <section id="about">
+    <p class="label">01 / ABOUT ME</p>
+    <h2>A little about this space.</h2>
+    <p>This website is my first step into the world of web development. It's a place to experiment, learn new things, share ideas, and build something I'm proud of.</p>
+  </section>
+
+  <section id="projects">
+    <p class="label">02 / WHAT I'M EXPLORING</p>
+    <h2>My interests</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>💻 Coding</h3>
+        <p>Learning how websites and technology work, one step at a time.</p>
+      </div>
+
+      <div class="card">
+        <h3>✨ Creativity</h3>
+        <p>Exploring fresh ideas and discovering new ways to express them.</p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Building</h3>
+        <p>Creating projects, learning from mistakes, and getting better every day.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <p class="label">03 / THE JOURNEY</p>
+    <h2>This is just the beginning.</h2>
+    <p>Every expert started as a beginner. Here's to learning, creating, and seeing where this journey goes!</p>
+    <a class="button" href="#about">Explore again ↑</a>
+  </section>
+
+  <footer>
+    © 2026 My Space | Built with curiosity ✦
+  </footer>
+
+</body>
+  </html>
